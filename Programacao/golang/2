@@ -1,0 +1,17 @@
+// Package mainprovides ...
+package main
+
+
+
+import (
+    "fmt"
+    "create"
+)
+
+
+
+func main()  {
+  nums := []int{1,2,3}
+  runningSum(nums)
+  fmt.Println(nums)
+}

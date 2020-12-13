@@ -1,0 +1,16 @@
+%%   _____  _____   _____ 
+%%  |  __ \|  __ \ / ____|
+%%  | |__) | |__) | |  __ 
+%%  |  _  /|  ___/| | |_ |
+%%  | | \ \| |    | |__| |
+%%  |_|  \_\_|     \_____|
+
+= Index =
+== Main Texts ==
+    * Os textos do ~/Desktop/Rpg
+== Outros e afins ==
+
+    * http://tools.goblinist.com/5enc - gerador de encontros 
+    * https://dicecloud.com/character/aPRnbK9xf9aRCeboh/Jeje-de-Zamargo - exemplo de Diceclound
+    * https://avrae.io/ - Avrae integrando com discord 
+    * https://www.youtube.com/watch?v=8M0lmNORNm8&list=PLG0aL-SDkL7GCNin0Cn3YJEKU9n3bDtiH&index=3 - Linkando o Avrae
