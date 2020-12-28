@@ -2,8 +2,8 @@
 #Git repo variables
 # export GIT_AUTHOR_NAME = "Tanaka"
 # export GIT_AUTHOR_EMAIL = "tanaka012@outlook.com"
-    #less history
-    export LESSHISTFILE="$HOME/.config/less"
+#less history
+export LESSHISTFILE="$HOME/.config/less"
 #xinit
 export XINITRC="$HOME/.config/X11/xinitrc"
 export XSERVERRC="$HOME/.config/X11/xserverrc"
@@ -27,7 +27,7 @@ export GEM_SPEC_CACHE="$HOME/.config/gem"
 #Gnupg
 export GNUPGHOME="$HOME/.config/gnupg"
 #ZSH 
-export ZDOTDIR="$HOME/.config/zsh"
+export ZDOTDIR="$HOME/dotfiles/zsh"
 #environment variables for nvim 
 export PATH="/home/tanaka/.config/gem/ruby/2.7.0/bin:$PATH"  
 export GOPATH=$HOME/.config/go
@@ -40,9 +40,9 @@ export LF_CONFIG_LOCATION="$HOME/.config/lf/lfrc"
 export TERM=alacritty
 
 #environment variables for ibus
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
 #########################################
 # icons for LF file menager 
 export LF_ICONS="\

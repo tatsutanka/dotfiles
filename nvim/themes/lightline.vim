@@ -1,7 +1,7 @@
 
 "lightline stiles
 let g:lightline = {
-      \ 'colorscheme': 'palenight',
+      \ 'colorscheme': 'dracula',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             ['blame','cocstatus' ,'gitbranch', 'readonly', 'filename', 'modified' ,'zoomstatus'] ],

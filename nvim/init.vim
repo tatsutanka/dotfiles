@@ -14,8 +14,8 @@ call plug#begin()
 "A light and configurable statusline/tabline plugin for Vim
 Plug 'itchyny/lightline.vim'
 
-" material palenight vim colorscheme
-Plug 'drewtempelmeyer/palenight.vim'
+" DRACULA theme 
+Plug 'dracula/vim'
 
 " Use release branch
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -29,12 +29,6 @@ Plug 'tpope/vim-commentary'
 " fugitive.vim: A Git wrapper so awesome, it should be illegal 
 Plug 'tpope/vim-fugitive'
 
-" vim knowing keys
-Plug 'liuchengxu/vim-which-key'
-
-" starter for vim 
-Plug 'mhinz/vim-startify'
-
 " vim fzf 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -42,39 +36,37 @@ Plug 'junegunn/fzf.vim'
 " vim zoom 
 Plug 'dhruvasagar/vim-zoom'
 
-"vim terminal enhencer
-Plug 'kassio/neoterm'
-
-"vim latex preview
-Plug 'donRaphaco/neotex', { 'for': 'tex' }
-
-" vim and spotify
-Plug 'mattpenney89/vimify'
-
 " vim and snippets
 Plug 'honza/vim-snippets'
+
+" Debugging Plugins
+Plug 'puremourning/vimspector'
+
+" latex Preview
+Plug 'lervag/vimtex'
+
+" vim and markdown 
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 highlight clear
 call plug#end()
 
 "========================================================================Vim-config
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/general/paths.vim
-source $HOME/.config/nvim/keys/keys.vim
+source $HOME/dotfiles/nvim/general/settings.vim
+source $HOME/dotfiles/nvim/general/paths.vim
+source $HOME/dotfiles/nvim/keys/keys.vim 
 "========================================================================Plugins
 "===========================================Themes
-source $HOME/.config/nvim/themes/palenight.vim
-source $HOME/.config/nvim/themes/lightline.vim
+source $HOME/dotfiles/nvim/themes/color.vim
+source $HOME/dotfiles/nvim/themes/lightline.vim
 "===========================================Plugins
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/indentline.vim
-source $HOME/.config/nvim/plug-config/comentary.vim
-source $HOME/.config/nvim/plug-config/fugitive.vim
-source $HOME/.config/nvim/plug-config/which-key.vim
-source $HOME/.config/nvim/plug-config/fzf.vim
-source $HOME/.config/nvim/plug-config/starter.vim
-source $HOME/.config/nvim/plug-config/zoom.vim
-source $HOME/.config/nvim/plug-config/neoterm.vim 
-source $HOME/.config/nvim/plug-config/neotex.vim
-source $HOME/.config/nvim/plug-config/vimfy.vim
-source $HOME/.config/nvim/plug-config/vim-snippets.vim
+source $HOME/dotfiles/nvim/plug-config/coc.vim
+source $HOME/dotfiles/nvim/plug-config/indentline.vim
+source $HOME/dotfiles/nvim/plug-config/comentary.vim
+source $HOME/dotfiles/nvim/plug-config/fugitive.vim
+source $HOME/dotfiles/nvim/plug-config/fzf.vim
+source $HOME/dotfiles/nvim/plug-config/zoom.vim
+source $HOME/dotfiles/nvim/plug-config/vim-snippets.vim
+source $HOME/dotfiles/nvim/plug-config/vimtex.vim
+source $HOME/dotfiles/nvim/plug-config/vimmarkdown.vim
+" source $HOME/dotfiles/nvim/Plug-config/vimspector.vim

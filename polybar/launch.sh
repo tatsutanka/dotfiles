@@ -9,10 +9,10 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
-polybar -c ~/.config/polybar/config.ini main &
+polybar -c ~/dotfiles/polybar/config.ini main &
 
 my_second_monitor=$(xrandr --query | grep 'DVI-I-1')
 if [[ $my_second_monitor = *connected* ]]; then
-    polybar -c ~/.config/polybar/config.ini second &
+    polybar -c ~/dotfiles/polybar/config.ini second &
 fi
 
