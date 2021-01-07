@@ -1,7 +1,7 @@
 #!/bin/sh
 #Git repo variables
-# export GIT_AUTHOR_NAME = "Tanaka"
-# export GIT_AUTHOR_EMAIL = "tanaka012@outlook.com"
+export GIT_AUTHOR_NAME="Tanaka"
+export GIT_AUTHOR_EMAIL="tanaka012@outlook.com"
 #less history
 export LESSHISTFILE="$HOME/.config/less"
 #xinit
@@ -27,7 +27,9 @@ export GEM_SPEC_CACHE="$HOME/.config/gem"
 #Gnupg
 export GNUPGHOME="$HOME/.config/gnupg"
 #ZSH 
+export ZSH="$HOME/dotfiles/oh-my-zsh"
 export ZDOTDIR="$HOME/dotfiles/zsh"
+
 #environment variables for nvim 
 export PATH="/home/tanaka/.config/gem/ruby/2.7.0/bin:$PATH"  
 export GOPATH=$HOME/.config/go
@@ -203,5 +205,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-
-
