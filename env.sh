@@ -13,9 +13,9 @@ export STARDICT_DATA_DIR="$HOME/.config/stardic"
 export NPM_CONFIG_USERCONFIG="$HOME/.config/npm"
 #cargo
 export CARGO_HOME="$HOME/.config/cargo"
-#java 
+#java
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$HOME/.config/java"
-#nv 
+#nv
 export CUDA_CACHE_PATH="$HOME/.config/nv"
 #pass
 export PASSWORD_STORE_DIR="$HOME/.config/pass"
@@ -26,12 +26,12 @@ export GEM_SPEC_CACHE="$HOME/.config/gem"
 
 #Gnupg
 export GNUPGHOME="$HOME/.config/gnupg"
-#ZSH 
+#ZSH
 export ZSH="$HOME/dotfiles/oh-my-zsh"
 export ZDOTDIR="$HOME/dotfiles/zsh"
 
-#environment variables for nvim 
-export PATH="/home/tanaka/.config/gem/ruby/2.7.0/bin:$PATH"  
+#environment variables for nvim
+export PATH="/home/tanaka/.config/gem/ruby/2.7.0/bin:$PATH"
 export GOPATH=$HOME/.config/go
 export PATH=$PATH:$GOPATH/bin
 export EDITOR=nvim
@@ -46,7 +46,7 @@ export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 #########################################
-# icons for LF file menager 
+# icons for LF file menager
 export LF_ICONS="\
 di=:\
 fi=:\
