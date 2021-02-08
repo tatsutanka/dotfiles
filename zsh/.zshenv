@@ -36,7 +36,7 @@ export GOPATH=$HOME/.config/go
 export PATH=$PATH:$GOPATH/bin
 export EDITOR=nvim
 #LF environment variables (LF environment variable put by hand )
-export LF_CONFIG_LOCATION="$HOME/.config/lf/lfrc"
+export LF_CONFIG_LOCATION="$HOME/dotfiles/lf/lfrc"
 
 #environmental variables for tmux
 export TERM=alacritty
