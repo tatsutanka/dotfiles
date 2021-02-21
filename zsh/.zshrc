@@ -99,6 +99,7 @@ bindkey '^e' edit-command-line
 # aliasrc
 
 alias spt="$HOME/dotfiles/scripts/launchspt"
+alias Syu="sudo pacman -Syu"
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null

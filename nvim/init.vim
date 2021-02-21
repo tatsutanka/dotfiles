@@ -76,4 +76,5 @@ nnoremap <leader>l :wincmd l<CR>
 " You can't stop me
 cmap w!! w !sudo tee %
 
-
+" disabling ruby provider
+let g:loaded_ruby_provider = 0

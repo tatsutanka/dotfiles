@@ -66,6 +66,8 @@ cmd zle-init :{{
 
 &[[ -n "$ZLE_FIFO" ]] && lf -remote "send $id zle-init"
 
+cmd setwallpaper %nitrogen --set-auto --save "$f"
+
 # File Openers
 map ee $$EDITOR "$f"
 map u $view "$f"
@@ -109,3 +111,4 @@ map gi cd ~/Imagens
 map gt cd ~/Documentos
 map gd cd ~/dotfiles
 
+map bg setwallpaper
