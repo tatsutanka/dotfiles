@@ -39,8 +39,8 @@ export EDITOR=nvim
 export LF_CONFIG_LOCATION="$HOME/dotfiles/lf/lfrc"
 
 #environmental variables for tmux
-export TERM=alacritty
-export SHELL=alacritty
+export TERM=kitty
+export SHELL=kitty
 #environment variables for ibus
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
