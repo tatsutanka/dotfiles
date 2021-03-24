@@ -28,7 +28,7 @@ set noshowmode
 set nobackup
 set nowritebackup
 set noswapfile
-set undodir=$HOME/.vim/undodir
+set undodir=$HOME/dotfiles/nvim/undodir
 set undofile
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
