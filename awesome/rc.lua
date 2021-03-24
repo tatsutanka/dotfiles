@@ -573,7 +573,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 autorun = true
 autorunApps =
 {
-    "nitrogen --restore"
+    "nitrogen --restore",
+    "nm-applet"
+
 }
 if autorun then
    for app = 1, #autorunApps do
