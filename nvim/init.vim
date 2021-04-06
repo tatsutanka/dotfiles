@@ -50,6 +50,9 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'p00f/nvim-ts-rainbow'
 
+" markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 "general
 Plug 'windwp/nvim-autopairs'
 call plug#end()
@@ -62,6 +65,7 @@ source $HOME/dotfiles/nvim/general/functions.vim
 source $HOME/dotfiles/nvim/plug-config/skin.vim
 "========================================================================Plugins
 source $HOME/dotfiles/nvim/plug-config/lsp-config.vim
+source $HOME/dotfiles/nvim/plug-config/markdown.vim
 luafile $HOME/dotfiles/nvim/plug-config/compe-config.lua
 luafile $HOME/dotfiles/nvim/plug-config/keymappings.lua
 luafile $HOME/dotfiles/nvim/plug-config/treesitter.lua
