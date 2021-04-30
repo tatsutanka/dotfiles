@@ -1,7 +1,7 @@
 "
 " ██╗███╗   ██╗██╗████████╗██╗   ██╗██╗███    ███╗
 " ██║████╗  ██║██║╚══██╔══╝██║   ██║██║████╗ ████║
-" ██║██╔██╗ ██║██║   ██║   ██║   ██║██║██╔████╔██║
+" ██║██╔██╗ ██║██║   ██║   ██║   ██║██║██╔████╔██║ 
 " ██║██║╚██╗██║██║   ██║   ╚██╗ ██╔╝██║██║╚██╔╝██║
 " ██║██║ ╚████║██║   ██║    ╚████╔╝ ██║██║ ╚═╝ ██║
 " ╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝
@@ -11,11 +11,9 @@
 "======================================================================Plugins
 call plug#begin('~/dotfiles/nvim/plugged')
 
-" comenting
-Plug 'tpope/vim-commentary'
-
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'lewis6991/gitsigns.nvim'
 
 "Making good for the eyes
 Plug 'itchyny/lightline.vim'
@@ -25,15 +23,19 @@ Plug 'dracula/vim'
 " Lsp
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
-Plug 'glepnir/lspsaga.nvim'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'kabouzeid/nvim-lspinstall'
 
+" debugiing
+Plug 'mfussenegger/nvim-dap'
+
 " Autocomplete
 Plug 'hrsh7th/nvim-compe'
-Plug 'mattn/emmet-vim'
-Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-Plug 'xabikos/vscode-javascript'
+
+"Snippets
+Plug 'rafamadriz/friendly-snippets'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 "icons
 Plug 'kyazdani42/nvim-web-devicons' " for file icons (use in nvim-tree)
@@ -55,6 +57,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 "general
 Plug 'windwp/nvim-autopairs'
+Plug 'kevinhwang91/nvim-bqf'
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 "========================================================================Vim-config
@@ -67,19 +72,20 @@ source $HOME/dotfiles/nvim/plug-config/skin.vim
 source $HOME/dotfiles/nvim/plug-config/lsp-config.vim
 source $HOME/dotfiles/nvim/plug-config/markdown.vim
 luafile $HOME/dotfiles/nvim/plug-config/compe-config.lua
-luafile $HOME/dotfiles/nvim/plug-config/keymappings.lua
 luafile $HOME/dotfiles/nvim/plug-config/treesitter.lua
 luafile $HOME/dotfiles/nvim/plug-config/telescope.lua
-luafile $HOME/dotfiles/nvim/plug-config/explorer.lua
 luafile $HOME/dotfiles/nvim/plug-config/autopairs.lua
-"========================================================================LSP
+"========================================================================Snippets
+luafile $HOME/dotfiles/nvim/plug-config/snippets.lua
+source $HOME/dotfiles/nvim/plug-config/snippets.vim
+"========================================================================Lsp
+luafile $HOME/dotfiles/nvim/Lsp/go-lsp.lua
+luafile $HOME/dotfiles/nvim/Lsp/c-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/python-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/bash-lsp.lua
-luafile $HOME/dotfiles/nvim/Lsp/c-lsp.lua
-
 "========================================================================Others
-nnoremap <SPACE> <Nop>
-let mapleader = "\<Space>"
+let mapleader = ","
+let maplocalleader = ","
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv

@@ -1,3 +1,6 @@
+# Initiating
+fortune | cowthink
+
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
@@ -10,22 +13,28 @@ SAVEHIST=10000000
 HISTFILE=~/.cache/zsh/history
 
 # zsh theme
-PROMPT="%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%D{[%X]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} \
-%{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} "
+# PROMPT="%{$fg_bold[green]%}%n@%m %{$fg[blue]%}%D{[%X]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} \
+# %{$fg[blue]%}->%{$fg_bold[blue]%} %#%{$reset_color%} "
+autoload -U promptinit; promptinit
+prompt spaceship
 
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_COLOR=green
 # GIT
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%F{green}(%b)%r%f'
-zstyle ':vcs_info:*' enable git
+# autoload -Uz vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# RPROMPT=\$vcs_info_msg_0_
+# zstyle ':vcs_info:git:*' formats '%F{green}(%b)%r%f'
+# zstyle ':vcs_info:*' enable git
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}["
-ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[green]%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
+# ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}["
+# ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
+# ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[green]%}"
+# ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"

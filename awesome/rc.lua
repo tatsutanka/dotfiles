@@ -45,7 +45,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init("~/dotfiles/awesome/Theme/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -315,8 +315,6 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.spawn(launcher) end,
-              {description = "run rofi", group = "launcher"}),
 
     awful.key({ modkey }, "x",
               function ()
@@ -329,7 +327,7 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() awful.spawn(gears.filesystem.get_configuration_dir() ..
+    awful.key({ modkey }, "r", function() awful.spawn(gears.filesystem.get_configuration_dir() ..
                             "scripts/rofi/bin/launcher_colorful") end,
               {description = "show rofi bar", group = "launcher"})
 )
@@ -573,9 +571,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 autorun = true
 autorunApps =
 {
-    "nitrogen --restore",
     "nm-applet",
-    "Blueman-manager"
+    "blueman-tray",
+    "ibus-daemon"
 
 }
 if autorun then
