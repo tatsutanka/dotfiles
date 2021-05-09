@@ -25,6 +25,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'kosayoda/nvim-lightbulb'
 Plug 'kabouzeid/nvim-lspinstall'
+Plug 'mfussenegger/nvim-jdtls' " jdtls (java lsp)
 
 " debugiing
 Plug 'mfussenegger/nvim-dap'
@@ -83,6 +84,7 @@ luafile $HOME/dotfiles/nvim/Lsp/go-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/c-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/python-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/bash-lsp.lua
+source  $HOME/dotfiles/nvim/Lsp/java/java-lsp.vim
 "========================================================================Others
 let mapleader = ","
 let maplocalleader = ","
