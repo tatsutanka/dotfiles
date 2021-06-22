@@ -56,6 +56,9 @@ Plug 'p00f/nvim-ts-rainbow'
 " markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" Latex
+Plug 'xuhdev/vim-latex-live-preview'
+
 "general
 Plug 'windwp/nvim-autopairs'
 Plug 'kevinhwang91/nvim-bqf'
@@ -85,6 +88,8 @@ luafile $HOME/dotfiles/nvim/Lsp/c-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/python-lsp.lua
 luafile $HOME/dotfiles/nvim/Lsp/bash-lsp.lua
 source  $HOME/dotfiles/nvim/Lsp/java/java-lsp.vim
+"========================================================================Latex
+source $HOME/dotfiles/nvim/plug-config/lvim-previwer.vim
 "========================================================================Others
 let mapleader = ","
 let maplocalleader = ","
