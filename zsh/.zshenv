@@ -1,4 +1,7 @@
 #!/bin/sh
+#TASKRC
+export TASKRC="$HOME/.config/task/.taskrc"
+export TASKDATA="$HOME/.config/task/task"
 #Git repo variables
 export GIT_AUTHOR_NAME="Tanaka"
 export GIT_AUTHOR_EMAIL="tanaka012@outlook.com"
@@ -46,7 +49,7 @@ export XMODIFIERS=@im=ibus
 #########################################
 # icons for LF file menager
 export LF_ICONS="\
-di=:\
+di=:\
 fi=:\
 ln=:\
 or=:\
